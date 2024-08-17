@@ -1,15 +1,11 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>サンプルページ</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>GitHub Pagesでのサンプルページ</h1>
-    <p>このページはGitHub Pagesでホスティングされています。</p>
-    <button onclick="playSound()">音を再生</button>
-    <script src="https://github.com/NKGWsgk/SPK-illubo/blob/main/script.js"></script>
-</body>
-</html>
+function playJapanese() {
+    var utterance = new SpeechSynthesisUtterance("これはテストのための読み上げサンプルです。");
+    utterance.lang = 'ja-JP';
+    window.speechSynthesis.speak(utterance);
+}
+
+function playEnglish() {
+    var utterance = new SpeechSynthesisUtterance("This is a sample text for testing the speech synthesis.");
+    utterance.lang = 'en-US';
+    window.speechSynthesis.speak(utterance);
+}
