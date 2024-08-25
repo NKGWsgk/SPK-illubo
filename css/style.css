@@ -1,8 +1,9 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: url('../images/background.png');
+    background-image: url('https://github.com/NKGWsgk/SPK-illubo/raw/main/images/background.png');
     background-size: cover;
-    background-position: center;
+    background-repeat: no-repeat; /* 背景画像の繰り返しを防止 */
+    background-position: center center; /* 背景画像を中央に配置 */
     text-align: center;
     padding: 20px;
     margin: 0;
