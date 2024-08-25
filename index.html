@@ -14,9 +14,8 @@
 
     <script>
         function playJapanese() {
-            var utterance = new SpeechSynthesisUtterance("郵便局");
-            utterance.lang = 'ja-JP';
-            window.speechSynthesis.speak(utterance);
+            var audio = new Audio('https://github.com/NKGWsgk/SPK-illubo/raw/main/0-SPK-jiten.wav');
+            audio.play();
         }
 
         function playEnglish() {
