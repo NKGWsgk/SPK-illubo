@@ -2,10 +2,36 @@ body {
     font-family: Arial, sans-serif;
     background-image: url('https://github.com/NKGWsgk/SPK-illubo/raw/main/images/background.png');
     background-size: cover;
-    background-repeat: no-repeat; /* 背景画像の繰り返しを防止 */
-    background-position: center center; /* 背景画像を中央に配置 */
+    background-repeat: no-repeat;
+    background-position: center center;
     text-align: center;
     padding: 20px;
     margin: 0;
     color: #333;
 }
+
+button {
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#langButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    bord
