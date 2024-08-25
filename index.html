@@ -9,11 +9,9 @@
 <body>
     <h1>サンプルページ</h1>
     <p>画像をクリックして、音声を再生します。</p>
-    <img src="images/post_office.png" alt="郵便局" onclick="playAudio()" style="cursor: pointer;">
+    <img src="images/post_office.png" alt="郵便局" onclick="playAudio()" id="postOfficeImage" style="cursor: pointer;">
     
-    <div style="position: fixed; bottom: 20px; right: 20px;">
-        <button id="langButton" onclick="toggleLanguage()">日本語</button>
-    </div>
+    <button id="langButton" onclick="toggleLanguage()">日本語</button>
 
     <script src="js/script.js"></script>
 </body>
