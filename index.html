@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>サンプルページ</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <h1>GitHub Pagesでのサンプルページ</h1>
@@ -12,17 +12,6 @@
     <button onclick="playJapanese()">日本語を再生</button>
     <button onclick="playEnglish()">英語を再生</button>
 
-    <script>
-        function playJapanese() {
-            var audio = new Audio('https://github.com/NKGWsgk/SPK-illubo/raw/main/0-SPK-jiten.wav');
-            audio.play();
-        }
-
-        function playEnglish() {
-            var utterance = new SpeechSynthesisUtterance("Post office");
-            utterance.lang = 'en-US';
-            window.speechSynthesis.speak(utterance);
-        }
-    </script>
+    <script src="js/script.js"></script>
 </body>
 </html>
