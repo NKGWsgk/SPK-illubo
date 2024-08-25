@@ -34,7 +34,7 @@ function showClickMarker(event) {
     marker.style.height = '20px';
     marker.style.borderRadius = '50%';
     marker.style.background = 'rgba(0, 0, 0, 0.5)';
-    marker.style.position = 'absolute';
+    marker.style.position = 'fixed'; // 'absolute' から 'fixed' に変更
     marker.style.top = event.clientY + 'px';
     marker.style.left = event.clientX + 'px';
     marker.style.transform = 'translate(-50%, -50%)';
