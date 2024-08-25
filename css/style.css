@@ -4,10 +4,11 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    height: 100vh; /* 画面全体に背景を広げる */
     text-align: center;
-    padding: 20px;
     margin: 0;
     color: #333;
+    position: relative;
 }
 
 button {
@@ -25,7 +26,7 @@ button:hover {
 }
 
 #langButton {
-    position: fixed;
+    position: absolute; /* 背景画像の上にボタンを固定 */
     bottom: 20px;
     right: 20px;
     padding: 15px 30px;
@@ -34,4 +35,9 @@ button:hover {
     border: none;
     background-color: #4CAF50;
     color: white;
-    bord
+    border-radius: 5px;
+}
+
+#langButton:hover {
+    background-color: #45a049;
+}
