@@ -1,5 +1,8 @@
 var currentLanguage = 'ja'; // デフォルトは日本語
 
+document.getElementById('langButton').addEventListener('click', toggleLanguage);
+document.getElementById('postOfficeImage').addEventListener('click', playAudio);
+
 function playAudio() {
     if (currentLanguage === 'ja') {
         var audio = new Audio('https://github.com/NKGWsgk/SPK-illubo/raw/main/audio/0-SPK-jiten.wav');
